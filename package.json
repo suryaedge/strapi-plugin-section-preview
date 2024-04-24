@@ -1,0 +1,39 @@
+{
+  "name": "strapi-plugin-section-preview",
+  "version": "1.0.0",
+  "description": "This will show a preview of any component and section",
+  "strapi": {
+    "name": "sectionpreview",
+    "description": "This will show a preview of any section in a popup",
+    "kind": "plugin",
+    "displayName": "Component Preview"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suryaedge/strapi-plugin-section-preview.git"
+  },
+  "author": {
+    "name": "Surya Basak",
+    "email": "surya.basak@edgewrapper.com"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0"
+  },
+  "maintainers": [
+    {
+      "name": "Surya Basak"
+    }
+  ],
+  "keywords": [
+    "strapi",
+    "component",
+    "component preview",
+    "content types"
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
