@@ -17,11 +17,11 @@ export default {
 
     app.customFields.register({
       name: "preview",
-      pluginId: "sectionpreview", // the custom field is created by a color-picker plugin
-      type: "string", // the color will be stored as a string
+      pluginId: "sectionpreview",
+      type: "string",
       intlLabel: {
         id: getTrad("sectionpreview.preview.label"),
-        defaultMessage: "Component Preview",
+        defaultMessage: "Section Preview",
       },
       intlDescription: {
         id: getTrad("sectionpreview.preview.description"),

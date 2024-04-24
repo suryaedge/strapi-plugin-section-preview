@@ -28,6 +28,7 @@ const preview = ({
         <ModalLayout
           onClose={() => setIsVisible((prev) => !prev)}
           labelledBy="title"
+          style={{ height: "auto", maxHeight: "50%" }}
         >
           <ModalHeader>
             <Typography
@@ -39,7 +40,7 @@ const preview = ({
               Preview
             </Typography>
           </ModalHeader>
-          <ModalBody style={{ height: "auto", maxHeight: "100vh" }}>
+          <ModalBody style={{ height: "auto", maxHeight: "80vh" }}>
             <img style={{ width: "100%" }} src={imageUrl} />
           </ModalBody>
         </ModalLayout>
