@@ -22,7 +22,7 @@ const preview = ({
     <Box>
       <Box>
         <Flex direction="column" alignItems="start">
-          <Typography variant="alpha">Preview</Typography>
+          <Typography>Preview Template</Typography>
           <Box paddingTop={2}>
             <Button startIcon={<Eye />} onClick={() => setIsVisible((prev) => !prev)}>
               {/* <Typography>Preview</Typography> */}
