@@ -4,6 +4,7 @@ import Eye from '@strapi/icons/Eye';
 
 import {
   Box,
+  Flex,
   Button,
   Typography,
   ModalLayout,
