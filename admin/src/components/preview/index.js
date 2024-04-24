@@ -40,7 +40,7 @@ const preview = ({
               Preview
             </Typography>
           </ModalHeader>
-          <ModalBody style={{ height: "auto", maxHeight: "80vh" }}>
+          <ModalBody style={{ height: "auto", maxHeight: "65vh" }}>
             <img style={{ width: "100%" }} src={imageUrl} />
           </ModalBody>
         </ModalLayout>
