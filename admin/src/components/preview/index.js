@@ -17,6 +17,7 @@ const preview = ({
   attribute,
 }) => {
   const imageUrl = attribute.options.url;
+  console.log(attribute);
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
