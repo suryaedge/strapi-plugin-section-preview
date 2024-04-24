@@ -4,7 +4,7 @@ module.exports = ({ strapi }) => ({
 
   index(ctx) {
     ctx.body = strapi
-      .plugin('componentpreview')
+      .plugin('sectionpreview')
       .service('myService')
       .getWelcomeMessage();
   },
