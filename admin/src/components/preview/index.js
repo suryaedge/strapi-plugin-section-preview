@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import Eye from '@strapi/icons/Eye';
 
 import {
   Box,
@@ -9,7 +10,6 @@ import {
   ModalBody,
   ModalHeader,
 } from "@strapi/design-system";
-
 const preview = ({
   //All these parameters are passed from admin\src\index.js
 
@@ -19,10 +19,16 @@ const preview = ({
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
-      <Box paddingTop={2}>
-        <Button onClick={() => setIsVisible((prev) => !prev)}>
-          <Typography>Preview</Typography>
-        </Button>
+      <Box>
+        <Flex direction="column" alignItems="start">
+          <Typography variant="alpha">Preview</Typography>
+          <Box paddingTop={2}>
+            <Button startIcon={<Eye />} onClick={() => setIsVisible((prev) => !prev)}>
+              {/* <Typography>Preview</Typography> */}
+              Preview
+            </Button>
+          </Box>
+        </Flex>
       </Box>
       {isVisible && (
         <ModalLayout
