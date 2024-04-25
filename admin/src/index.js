@@ -53,6 +53,40 @@ export default {
                   defaultMessage: 'Image URL',
                 },
               },
+              {
+                name: 'options.componentname',//name of an related field
+                type: 'text',//input type
+                intlLabel: {
+                  id: getTrad('componentname.text'),
+                  defaultMessage: 'Enter Component Name',//label for the URL field
+                },
+                description: {
+                  id: getTrad('componentname.description'),
+                  defaultMessage:
+                    'Enter Component Name',//description for field
+                },
+                placeholder: {
+                  id: getTrad('componentname.placeholder'),
+                  defaultMessage: 'Component Name',
+                },
+              },
+              {
+                name: 'options.contenttypegeturl',//name of an related field
+                type: 'text',//input type
+                intlLabel: {
+                  id: getTrad('contenttypegeturl.text'),
+                  defaultMessage: 'Enter Component Name',//label for the URL field
+                },
+                description: {
+                  id: getTrad('contenttypegeturl.description'),
+                  defaultMessage:
+                    'Enter Component Name',//description for field
+                },
+                placeholder: {
+                  id: getTrad('contenttypegeturl.placeholder'),
+                  defaultMessage: 'Component Name',
+                },
+              },
             ],
           },
         ],

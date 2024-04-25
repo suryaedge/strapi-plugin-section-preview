@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Eye from '@strapi/icons/Eye';
-import { useCMEditViewDataManager } from '@strapi/helper-plugin'
+// import { useCMEditViewDataManager } from '@strapi/helper-plugin'
 
 import {
   Box,
@@ -17,10 +17,13 @@ const preview = ({
 
   attribute,
 }) => {
-  const imageUrl = attribute.options.url;
-  const { initialData } = useCMEditViewDataManager()
-  console.log(initialData);
-  
+  const siteUrl = attribute.options.url;
+  const componentName = attribute.options.component;
+  const getUrl = attribute.options.contenttypegeturl;
+
+  // const { initialData } = useCMEditViewDataManager()
+  // console.log(initialData);
+
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
@@ -52,7 +55,8 @@ const preview = ({
             </Typography>
           </ModalHeader>
           <ModalBody style={{ height: "auto", maxHeight: "65vh" }}>
-            <img style={{ width: "100%" }} src={imageUrl} />
+            <iframe style={{ width: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="W3Schools Free Online Web Tutorials"></iframe>
+            {/* <img style={{ width: "100%" }} src={imageUrl} /> */}
           </ModalBody>
         </ModalLayout>
       )}
