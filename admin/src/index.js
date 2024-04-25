@@ -75,16 +75,16 @@ export default {
                 type: 'text',//input type
                 intlLabel: {
                   id: getTrad('contenttypegeturl.text'),
-                  defaultMessage: 'Enter Component Name',//label for the URL field
+                  defaultMessage: 'Enter page get API',//label for the URL field
                 },
                 description: {
                   id: getTrad('contenttypegeturl.description'),
                   defaultMessage:
-                    'Enter Component Name',//description for field
+                    'Enter page get API',//description for field
                 },
                 placeholder: {
                   id: getTrad('contenttypegeturl.placeholder'),
-                  defaultMessage: 'Component Name',
+                  defaultMessage: 'put everything after api/',
                 },
               },
             ],
