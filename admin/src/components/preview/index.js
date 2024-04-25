@@ -17,7 +17,7 @@ const preview = ({
 
   attribute,
 }) => {
-  const siteUrl = process.env.SITE_FRONTEND_URL;
+  const siteUrl = attribute.options.url;
   const componentName = attribute.options.componentname;
   const getUrl = attribute.options.contenttypegeturl;
 
@@ -55,7 +55,7 @@ const preview = ({
             </Typography>
           </ModalHeader>
           <ModalBody style={{ height: "auto", maxHeight: "65vh" }}>
-            <iframe style={{ width: "100%" }} src={`${siteUrl}/preview?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
+            <iframe style={{ width: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
             <p>Your browser does not support iframes.</p>
             </iframe>
             {/* <img style={{ width: "100%" }} src={imageUrl} /> */}
