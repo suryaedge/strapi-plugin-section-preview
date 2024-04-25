@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Eye from '@strapi/icons/Eye';
+import { useCMEditViewDataManager } from '@strapi/helper-plugin'
 
 import {
   Box,
@@ -17,7 +18,9 @@ const preview = ({
   attribute,
 }) => {
   const imageUrl = attribute.options.url;
-  console.log(attribute);
+  const { initialData } = useCMEditViewDataManager()
+  console.log(initialData);
+  
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
