@@ -37,23 +37,6 @@ export default {
             sectionTitle: null,
             items: [
               {
-                name: 'options.url',//name of an related field
-                type: 'text',//input type
-                intlLabel: {
-                  id: getTrad('url.text'),
-                  defaultMessage: 'Enter Image URL',//label for the URL field
-                },
-                description: {
-                  id: getTrad('url.description'),
-                  defaultMessage:
-                    'Enter the image URL.',//description for field
-                },
-                placeholder: {
-                  id: getTrad('url.placeholder'),
-                  defaultMessage: 'Image URL',
-                },
-              },
-              {
                 name: 'options.componentname',//name of an related field
                 type: 'text',//input type
                 intlLabel: {

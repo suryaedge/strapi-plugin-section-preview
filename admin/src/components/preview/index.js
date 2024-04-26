@@ -17,14 +17,11 @@ const preview = ({
 
   attribute,
 }) => {
-  const siteUrl = attribute.options.url;
-  const previewUrl = process.env.STRAPI_SITE_FRONTEND_URL;
-  const previewUrl2 = process.env.STRAPI_ADMIN_BACKEND_URL;
+  const siteUrl = process.env.STRAPI_SITE_FRONTEND_URL;
   const componentName = attribute.options.componentname;
   const getUrl = attribute.options.contenttypegeturl;
 
   // const { initialData } = useCMEditViewDataManager()
-  console.log(previewUrl);
 
   const [isVisible, setIsVisible] = useState(false);
   return (
