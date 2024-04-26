@@ -42,7 +42,7 @@ const preview = ({
         <ModalLayout
           onClose={() => setIsVisible((prev) => !prev)}
           labelledBy="title"
-          style={{ height: "auto", maxHeight: "50%" }}
+          style={{ height: "auto", maxHeight: "100%" }}
         >
           <ModalHeader>
             <Typography
