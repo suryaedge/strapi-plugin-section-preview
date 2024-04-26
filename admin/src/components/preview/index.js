@@ -19,6 +19,7 @@ const preview = ({
 }) => {
   const siteUrl = attribute.options.url;
   const previewUrl = process.env.STRAPI_SITE_FRONTEND_URL;
+  const previewUrl2 = process.env.STRAPI_ADMIN_BACKEND_URL;
   const componentName = attribute.options.componentname;
   const getUrl = attribute.options.contenttypegeturl;
 
@@ -55,7 +56,7 @@ const preview = ({
               Preview
             </Typography>
           </ModalHeader>
-          <ModalBody style={{ height: "60vh" }}>
+          <ModalBody style={{ height: "80vh" }}>
             <iframe style={{ width: "100%", height: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
             <p>Your browser does not support iframes.</p>
             </iframe>
