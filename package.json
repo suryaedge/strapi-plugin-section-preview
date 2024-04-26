@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-section-preview",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This will show a preview of any component and section",
   "strapi": {
     "name": "sectionpreview",
