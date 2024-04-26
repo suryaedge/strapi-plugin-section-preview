@@ -16,6 +16,7 @@ const preview = ({
   //All these parameters are passed from admin\src\index.js
 
   attribute,
+  singularName 
 }) => {
   const siteUrl = process.env.STRAPI_SITE_FRONTEND_URL;
   const componentName = attribute.options.componentname;
@@ -72,6 +73,7 @@ preview.defaultProps = {};
 // validation
 preview.propTypes = {
   attribute: PropTypes.object.isRequired,
+  singularName: PropTypes.string.isRequired, // Define prop type for singularName
 };
 
 export default preview;
