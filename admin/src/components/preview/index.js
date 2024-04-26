@@ -18,11 +18,12 @@ const preview = ({
   attribute,
 }) => {
   const siteUrl = attribute.options.url;
+  const previewUrl = process.env.STRAPI_SITE_FRONTEND_URL;
   const componentName = attribute.options.componentname;
   const getUrl = attribute.options.contenttypegeturl;
 
   // const { initialData } = useCMEditViewDataManager()
-  // console.log(initialData);
+  console.log(previewUrl);
 
   const [isVisible, setIsVisible] = useState(false);
   return (
@@ -42,7 +43,7 @@ const preview = ({
         <ModalLayout
           onClose={() => setIsVisible((prev) => !prev)}
           labelledBy="title"
-          style={{ height: "auto", maxHeight: "100%" }}
+          style={{ height: "auto", maxHeight: "100%", zIndex: 100  }}
         >
           <ModalHeader>
             <Typography
@@ -54,8 +55,8 @@ const preview = ({
               Preview
             </Typography>
           </ModalHeader>
-          <ModalBody style={{ height: "auto", maxHeight: "65vh" }}>
-            <iframe style={{ width: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
+          <ModalBody style={{ height: "60vh" }}>
+            <iframe style={{ width: "100%", height: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
             <p>Your browser does not support iframes.</p>
             </iframe>
             {/* <img style={{ width: "100%" }} src={imageUrl} /> */}
