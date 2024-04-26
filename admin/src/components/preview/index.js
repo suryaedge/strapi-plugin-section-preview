@@ -54,7 +54,7 @@ const preview = ({
             </Typography>
           </ModalHeader>
           <ModalBody style={{ height: "80vh" }}>
-            <iframe style={{ width: "100%", height: "100%" }} src={`${siteUrl}?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
+            <iframe style={{ width: "100%", height: "100%" }} src={`${siteUrl}/preview?component=${componentName}&pageapi=${getUrl}`} title="Section Preview">
             <p>Your browser does not support iframes.</p>
             </iframe>
             {/* <img style={{ width: "100%" }} src={imageUrl} /> */}
