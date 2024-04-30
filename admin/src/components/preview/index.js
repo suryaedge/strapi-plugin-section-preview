@@ -15,15 +15,15 @@ import {
 const preview = ({
   //All these parameters are passed from admin\src\index.js
 
-  attribute,
-  singularName 
+  attribute 
 }) => {
   const siteUrl = process.env.STRAPI_SITE_FRONTEND_URL;
   const componentName = attribute.options.componentname;
   const getUrl = attribute.options.contenttypegeturl;
+  const apiIDFromUrl = window.location.pathname.split('::')[1].split('.')[0]
 
-  // const { initialData } = useCMEditViewDataManager()
-
+  console.log(apiIDFromUrl);
+  // // const { initialData } = useCMEditViewDataManager()
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
@@ -72,8 +72,7 @@ preview.defaultProps = {};
 
 // validation
 preview.propTypes = {
-  attribute: PropTypes.object.isRequired,
-  singularName: PropTypes.string.isRequired, // Define prop type for singularName
+  attribute: PropTypes.object.isRequired
 };
 
 export default preview;
