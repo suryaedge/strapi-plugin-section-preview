@@ -22,6 +22,12 @@ const preview = ({
   // const getUrl = attribute.options.contenttypegeturl;
   const apiIDFromUrl = window.location.pathname.split('::')[1]?.split('.')[0] ?? null;
 
+  const { allLayoutData, modifiedData } = useCMEditViewDataManager();
+  const { uid } = allLayoutData.contentType;
+  console.log(allLayoutData);
+  console.log(modifiedData);
+  console.log(uid);
+
   // debugger
   // console.log(apiIDFromUrl);
   // const { initialData } = useCMEditViewDataManager()
