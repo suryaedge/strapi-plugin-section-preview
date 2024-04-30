@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Eye from '@strapi/icons/Eye';
-// import { useCMEditViewDataManager } from '@strapi/helper-plugin'
+import { useCMEditViewDataManager } from '@strapi/helper-plugin'
 
 import {
   Box,
