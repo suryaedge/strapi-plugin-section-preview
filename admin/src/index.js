@@ -53,23 +53,23 @@ export default {
                   defaultMessage: 'Component Name',
                 },
               },
-              {
-                name: 'options.contenttypegeturl',//name of an related field
-                type: 'text',//input type
-                intlLabel: {
-                  id: getTrad('contenttypegeturl.text'),
-                  defaultMessage: 'Enter page get API',//label for the URL field
-                },
-                description: {
-                  id: getTrad('contenttypegeturl.description'),
-                  defaultMessage:
-                    'Enter page get API',//description for field
-                },
-                placeholder: {
-                  id: getTrad('contenttypegeturl.placeholder'),
-                  defaultMessage: 'put everything after api/',
-                },
-              },
+              // {
+              //   name: 'options.contenttypegeturl',//name of an related field
+              //   type: 'text',//input type
+              //   intlLabel: {
+              //     id: getTrad('contenttypegeturl.text'),
+              //     defaultMessage: 'Enter page get API',//label for the URL field
+              //   },
+              //   description: {
+              //     id: getTrad('contenttypegeturl.description'),
+              //     defaultMessage:
+              //       'Enter page get API',//description for field
+              //   },
+              //   placeholder: {
+              //     id: getTrad('contenttypegeturl.placeholder'),
+              //     defaultMessage: 'put everything after api/',
+              //   },
+              // },
             ],
           },
         ],
